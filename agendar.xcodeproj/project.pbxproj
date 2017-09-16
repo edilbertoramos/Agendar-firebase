@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2415DDB21DC791870012BC48 /* Hora.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2415DDB11DC791870012BC48 /* Hora.swift */; };
+		2415DDB41DC7BCBB0012BC48 /* HorarioDisponivel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2415DDB31DC7BCBB0012BC48 /* HorarioDisponivel.swift */; };
+		244458A71DC14FAF0042D538 /* ServicoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244458A61DC14FAF0042D538 /* ServicoStore.swift */; };
+		244458A91DC14FC20042D538 /* ProfissionalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244458A81DC14FC20042D538 /* ProfissionalStore.swift */; };
+		244458AB1DC15EE40042D538 /* HorarioDisponivelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244458AA1DC15EE40042D538 /* HorarioDisponivelCollectionViewCell.swift */; };
+		244D96A11DA7CE3600D68A2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D96A01DA7CE3600D68A2F /* AppDelegate.swift */; };
+		244D96A31DA7CE3600D68A2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D96A21DA7CE3600D68A2F /* ViewController.swift */; };
+		244D96A61DA7CE3600D68A2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244D96A41DA7CE3600D68A2F /* Main.storyboard */; };
+		244D96A91DA7CE3600D68A2F /* agendar.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 244D96A71DA7CE3600D68A2F /* agendar.xcdatamodeld */; };
+		244D96AB1DA7CE3600D68A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244D96AA1DA7CE3600D68A2F /* Assets.xcassets */; };
+		244D96AE1DA7CE3600D68A2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 244D96AC1DA7CE3600D68A2F /* LaunchScreen.storyboard */; };
+		244D96B91DA7CE3600D68A2F /* agendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D96B81DA7CE3600D68A2F /* agendarTests.swift */; };
+		244D96C41DA7CE3600D68A2F /* agendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D96C31DA7CE3600D68A2F /* agendarUITests.swift */; };
+		244D96D81DB7197300D68A2F /* NovoAgendamentoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D96D71DB7197300D68A2F /* NovoAgendamentoTableViewController.swift */; };
+		244D96DA1DB726FB00D68A2F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D96D91DB726FB00D68A2F /* LoginViewController.swift */; };
+		244D96DC1DB8457F00D68A2F /* Profissional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D96DB1DB8457E00D68A2F /* Profissional.swift */; };
+		244D96DE1DB846BB00D68A2F /* Servico.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244D96DD1DB846BB00D68A2F /* Servico.swift */; };
+		2452EA301DC6C28900A4C29D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2452EA2F1DC6C28900A4C29D /* GoogleService-Info.plist */; };
+		2458FFA91DC7C4BB00C8C0B6 /* HorarioDisponivelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458FFA81DC7C4BB00C8C0B6 /* HorarioDisponivelStore.swift */; };
+		24677AC11DC6D3EF00A21FA6 /* Agendamento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24677AC01DC6D3EF00A21FA6 /* Agendamento.swift */; };
+		24677AC31DC6D3FB00A21FA6 /* AgendamentoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24677AC21DC6D3FB00A21FA6 /* AgendamentoStore.swift */; };
+		24B429651DC675500030D11A /* AgendamentosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B429641DC675500030D11A /* AgendamentosTableViewCell.swift */; };
+		24B429671DC6769E0030D11A /* AgendamentosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B429661DC6769E0030D11A /* AgendamentosTableViewController.swift */; };
+		24F2D5681DF596550000437C /* CadastroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F2D5671DF596550000437C /* CadastroViewController.swift */; };
+		74934D33516D14979B2A319E /* Pods_agendarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD14BE47603B50D4ADF944C /* Pods_agendarUITests.framework */; };
+		9773C2DB0893E1349710D03E /* Pods_agendarTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B93C50484C4C609DE631FC /* Pods_agendarTests.framework */; };
+		DC0FD98FA5E6BDE276C5FFB2 /* Pods_agendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F37043E67BF4B578FC9E3D9 /* Pods_agendar.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		244D96B51DA7CE3600D68A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 244D96951DA7CE3500D68A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 244D969C1DA7CE3500D68A2F;
+			remoteInfo = agendar;
+		};
+		244D96C01DA7CE3600D68A2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 244D96951DA7CE3500D68A2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 244D969C1DA7CE3500D68A2F;
+			remoteInfo = agendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049563F134C119697A2464D3 /* Pods-agendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agendarTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-agendarTests/Pods-agendarTests.release.xcconfig"; sourceTree = "<group>"; };
+		2415DDB11DC791870012BC48 /* Hora.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hora.swift; sourceTree = "<group>"; };
+		2415DDB31DC7BCBB0012BC48 /* HorarioDisponivel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorarioDisponivel.swift; sourceTree = "<group>"; };
+		244458A61DC14FAF0042D538 /* ServicoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicoStore.swift; sourceTree = "<group>"; };
+		244458A81DC14FC20042D538 /* ProfissionalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfissionalStore.swift; sourceTree = "<group>"; };
+		244458AA1DC15EE40042D538 /* HorarioDisponivelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorarioDisponivelCollectionViewCell.swift; sourceTree = "<group>"; };
+		244D969D1DA7CE3600D68A2F /* agendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = agendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		244D96A01DA7CE3600D68A2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		244D96A21DA7CE3600D68A2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		244D96A51DA7CE3600D68A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		244D96A81DA7CE3600D68A2F /* agendar.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = agendar.xcdatamodel; sourceTree = "<group>"; };
+		244D96AA1DA7CE3600D68A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		244D96AD1DA7CE3600D68A2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		244D96AF1DA7CE3600D68A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		244D96B41DA7CE3600D68A2F /* agendarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = agendarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		244D96B81DA7CE3600D68A2F /* agendarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agendarTests.swift; sourceTree = "<group>"; };
+		244D96BA1DA7CE3600D68A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		244D96BF1DA7CE3600D68A2F /* agendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = agendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		244D96C31DA7CE3600D68A2F /* agendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agendarUITests.swift; sourceTree = "<group>"; };
+		244D96C51DA7CE3600D68A2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		244D96D71DB7197300D68A2F /* NovoAgendamentoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NovoAgendamentoTableViewController.swift; path = ../NovoAgendamentoTableViewController.swift; sourceTree = "<group>"; };
+		244D96D91DB726FB00D68A2F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		244D96DB1DB8457E00D68A2F /* Profissional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profissional.swift; sourceTree = "<group>"; };
+		244D96DD1DB846BB00D68A2F /* Servico.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Servico.swift; sourceTree = "<group>"; };
+		2452EA2F1DC6C28900A4C29D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2458FFA81DC7C4BB00C8C0B6 /* HorarioDisponivelStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorarioDisponivelStore.swift; sourceTree = "<group>"; };
+		24677AC01DC6D3EF00A21FA6 /* Agendamento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agendamento.swift; sourceTree = "<group>"; };
+		24677AC21DC6D3FB00A21FA6 /* AgendamentoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendamentoStore.swift; sourceTree = "<group>"; };
+		24B429641DC675500030D11A /* AgendamentosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendamentosTableViewCell.swift; sourceTree = "<group>"; };
+		24B429661DC6769E0030D11A /* AgendamentosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgendamentosTableViewController.swift; sourceTree = "<group>"; };
+		24F2D5671DF596550000437C /* CadastroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CadastroViewController.swift; sourceTree = "<group>"; };
+		41B93C50484C4C609DE631FC /* Pods_agendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_agendarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ECA61C3D199F6CEF14C0E61 /* Pods-agendarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agendarUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-agendarUITests/Pods-agendarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8EAFFD0C3992F8B8BA496BC9 /* Pods-agendarUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agendarUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-agendarUITests/Pods-agendarUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F37043E67BF4B578FC9E3D9 /* Pods_agendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_agendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9336158778555F7B85C87B9D /* Pods-agendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agendar.debug.xcconfig"; path = "Pods/Target Support Files/Pods-agendar/Pods-agendar.debug.xcconfig"; sourceTree = "<group>"; };
+		B0C30E746E3EE4E09B9AC4CB /* Pods-agendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agendar.release.xcconfig"; path = "Pods/Target Support Files/Pods-agendar/Pods-agendar.release.xcconfig"; sourceTree = "<group>"; };
+		BCD14BE47603B50D4ADF944C /* Pods_agendarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_agendarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19590C56533CDC49DBB1E09 /* Pods-agendarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-agendarTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-agendarTests/Pods-agendarTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		244D969A1DA7CE3500D68A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0FD98FA5E6BDE276C5FFB2 /* Pods_agendar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244D96B11DA7CE3600D68A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9773C2DB0893E1349710D03E /* Pods_agendarTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244D96BC1DA7CE3600D68A2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74934D33516D14979B2A319E /* Pods_agendarUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12CD38AE356725FDA682C1B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9336158778555F7B85C87B9D /* Pods-agendar.debug.xcconfig */,
+				B0C30E746E3EE4E09B9AC4CB /* Pods-agendar.release.xcconfig */,
+				D19590C56533CDC49DBB1E09 /* Pods-agendarTests.debug.xcconfig */,
+				049563F134C119697A2464D3 /* Pods-agendarTests.release.xcconfig */,
+				8EAFFD0C3992F8B8BA496BC9 /* Pods-agendarUITests.debug.xcconfig */,
+				6ECA61C3D199F6CEF14C0E61 /* Pods-agendarUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		244D96941DA7CE3500D68A2F = {
+			isa = PBXGroup;
+			children = (
+				244D969F1DA7CE3600D68A2F /* agendar */,
+				244D96B71DA7CE3600D68A2F /* agendarTests */,
+				244D96C21DA7CE3600D68A2F /* agendarUITests */,
+				244D969E1DA7CE3600D68A2F /* Products */,
+				12CD38AE356725FDA682C1B9 /* Pods */,
+				5A4B7EF1B541718DD478EAD1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		244D969E1DA7CE3600D68A2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				244D969D1DA7CE3600D68A2F /* agendar.app */,
+				244D96B41DA7CE3600D68A2F /* agendarTests.xctest */,
+				244D96BF1DA7CE3600D68A2F /* agendarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		244D969F1DA7CE3600D68A2F /* agendar */ = {
+			isa = PBXGroup;
+			children = (
+				244D96A01DA7CE3600D68A2F /* AppDelegate.swift */,
+				24A10BCD1DC130E3006C81DB /* Model */,
+				24677ABE1DC6C9F200A21FA6 /* View */,
+				24A10BCC1DC130D2006C81DB /* Controller */,
+				24677ABF1DC6CA1A00A21FA6 /* Images */,
+				24677ABD1DC6C9DD00A21FA6 /* pList */,
+			);
+			path = agendar;
+			sourceTree = "<group>";
+		};
+		244D96B71DA7CE3600D68A2F /* agendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				244D96B81DA7CE3600D68A2F /* agendarTests.swift */,
+				244D96BA1DA7CE3600D68A2F /* Info.plist */,
+			);
+			path = agendarTests;
+			sourceTree = "<group>";
+		};
+		244D96C21DA7CE3600D68A2F /* agendarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				244D96C31DA7CE3600D68A2F /* agendarUITests.swift */,
+				244D96C51DA7CE3600D68A2F /* Info.plist */,
+			);
+			path = agendarUITests;
+			sourceTree = "<group>";
+		};
+		24677ABD1DC6C9DD00A21FA6 /* pList */ = {
+			isa = PBXGroup;
+			children = (
+				244D96AF1DA7CE3600D68A2F /* Info.plist */,
+				2452EA2F1DC6C28900A4C29D /* GoogleService-Info.plist */,
+			);
+			name = pList;
+			sourceTree = "<group>";
+		};
+		24677ABE1DC6C9F200A21FA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				244D96A41DA7CE3600D68A2F /* Main.storyboard */,
+				244D96AC1DA7CE3600D68A2F /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		24677ABF1DC6CA1A00A21FA6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				244D96AA1DA7CE3600D68A2F /* Assets.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		24677AC41DC77BEF00A21FA6 /* DBInterno */ = {
+			isa = PBXGroup;
+			children = (
+				244D96A71DA7CE3600D68A2F /* agendar.xcdatamodeld */,
+			);
+			name = DBInterno;
+			sourceTree = "<group>";
+		};
+		24A10BCC1DC130D2006C81DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				244D96A21DA7CE3600D68A2F /* ViewController.swift */,
+				24F2D5671DF596550000437C /* CadastroViewController.swift */,
+				244D96D91DB726FB00D68A2F /* LoginViewController.swift */,
+				24B429661DC6769E0030D11A /* AgendamentosTableViewController.swift */,
+				244D96D71DB7197300D68A2F /* NovoAgendamentoTableViewController.swift */,
+				24A2D3281DDD0A0200490FC5 /* Cell */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		24A10BCD1DC130E3006C81DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24677AC01DC6D3EF00A21FA6 /* Agendamento.swift */,
+				24677AC21DC6D3FB00A21FA6 /* AgendamentoStore.swift */,
+				244D96DB1DB8457E00D68A2F /* Profissional.swift */,
+				244458A81DC14FC20042D538 /* ProfissionalStore.swift */,
+				244D96DD1DB846BB00D68A2F /* Servico.swift */,
+				244458A61DC14FAF0042D538 /* ServicoStore.swift */,
+				2415DDB11DC791870012BC48 /* Hora.swift */,
+				2415DDB31DC7BCBB0012BC48 /* HorarioDisponivel.swift */,
+				2458FFA81DC7C4BB00C8C0B6 /* HorarioDisponivelStore.swift */,
+				24677AC41DC77BEF00A21FA6 /* DBInterno */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		24A2D3281DDD0A0200490FC5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				244458AA1DC15EE40042D538 /* HorarioDisponivelCollectionViewCell.swift */,
+				24B429641DC675500030D11A /* AgendamentosTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		5A4B7EF1B541718DD478EAD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F37043E67BF4B578FC9E3D9 /* Pods_agendar.framework */,
+				41B93C50484C4C609DE631FC /* Pods_agendarTests.framework */,
+				BCD14BE47603B50D4ADF944C /* Pods_agendarUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		244D969C1DA7CE3500D68A2F /* agendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244D96C81DA7CE3600D68A2F /* Build configuration list for PBXNativeTarget "agendar" */;
+			buildPhases = (
+				8B479DD168F0CB8CEFD43AE7 /* [CP] Check Pods Manifest.lock */,
+				244D96991DA7CE3500D68A2F /* Sources */,
+				244D969A1DA7CE3500D68A2F /* Frameworks */,
+				244D969B1DA7CE3500D68A2F /* Resources */,
+				2D09DC1383247E777B8A6D10 /* [CP] Embed Pods Frameworks */,
+				816D0898C4403E15C54FA1BE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = agendar;
+			productName = agendar;
+			productReference = 244D969D1DA7CE3600D68A2F /* agendar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		244D96B31DA7CE3600D68A2F /* agendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244D96CB1DA7CE3600D68A2F /* Build configuration list for PBXNativeTarget "agendarTests" */;
+			buildPhases = (
+				9D903C642665186212798440 /* [CP] Check Pods Manifest.lock */,
+				244D96B01DA7CE3600D68A2F /* Sources */,
+				244D96B11DA7CE3600D68A2F /* Frameworks */,
+				244D96B21DA7CE3600D68A2F /* Resources */,
+				CFD14A4D4E9BCD5C2757149A /* [CP] Embed Pods Frameworks */,
+				8D90EA5A90123AE4A4AB2EC2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				244D96B61DA7CE3600D68A2F /* PBXTargetDependency */,
+			);
+			name = agendarTests;
+			productName = agendarTests;
+			productReference = 244D96B41DA7CE3600D68A2F /* agendarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		244D96BE1DA7CE3600D68A2F /* agendarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 244D96CE1DA7CE3600D68A2F /* Build configuration list for PBXNativeTarget "agendarUITests" */;
+			buildPhases = (
+				8F73675869C51739C693DE27 /* [CP] Check Pods Manifest.lock */,
+				244D96BB1DA7CE3600D68A2F /* Sources */,
+				244D96BC1DA7CE3600D68A2F /* Frameworks */,
+				244D96BD1DA7CE3600D68A2F /* Resources */,
+				6192E241CBE40D0E0D78CD07 /* [CP] Embed Pods Frameworks */,
+				6433AC246B9AD38E2563C7FD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				244D96C11DA7CE3600D68A2F /* PBXTargetDependency */,
+			);
+			name = agendarUITests;
+			productName = agendarUITests;
+			productReference = 244D96BF1DA7CE3600D68A2F /* agendarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		244D96951DA7CE3500D68A2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "EDILBERTO DA SILVA RAMOS JUNIOR";
+				TargetAttributes = {
+					244D969C1DA7CE3500D68A2F = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = V98QDSD7WQ;
+						ProvisioningStyle = Automatic;
+					};
+					244D96B31DA7CE3600D68A2F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 244D969C1DA7CE3500D68A2F;
+					};
+					244D96BE1DA7CE3600D68A2F = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 244D969C1DA7CE3500D68A2F;
+					};
+				};
+			};
+			buildConfigurationList = 244D96981DA7CE3500D68A2F /* Build configuration list for PBXProject "agendar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 244D96941DA7CE3500D68A2F;
+			productRefGroup = 244D969E1DA7CE3600D68A2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				244D969C1DA7CE3500D68A2F /* agendar */,
+				244D96B31DA7CE3600D68A2F /* agendarTests */,
+				244D96BE1DA7CE3600D68A2F /* agendarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		244D969B1DA7CE3500D68A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244D96AE1DA7CE3600D68A2F /* LaunchScreen.storyboard in Resources */,
+				2452EA301DC6C28900A4C29D /* GoogleService-Info.plist in Resources */,
+				244D96AB1DA7CE3600D68A2F /* Assets.xcassets in Resources */,
+				244D96A61DA7CE3600D68A2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244D96B21DA7CE3600D68A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244D96BD1DA7CE3600D68A2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D09DC1383247E777B8A6D10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-agendar/Pods-agendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6192E241CBE40D0E0D78CD07 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-agendarUITests/Pods-agendarUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6433AC246B9AD38E2563C7FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-agendarUITests/Pods-agendarUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		816D0898C4403E15C54FA1BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-agendar/Pods-agendar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B479DD168F0CB8CEFD43AE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8D90EA5A90123AE4A4AB2EC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-agendarTests/Pods-agendarTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F73675869C51739C693DE27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D903C642665186212798440 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFD14A4D4E9BCD5C2757149A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-agendarTests/Pods-agendarTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		244D96991DA7CE3500D68A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2458FFA91DC7C4BB00C8C0B6 /* HorarioDisponivelStore.swift in Sources */,
+				24F2D5681DF596550000437C /* CadastroViewController.swift in Sources */,
+				244458AB1DC15EE40042D538 /* HorarioDisponivelCollectionViewCell.swift in Sources */,
+				244D96DA1DB726FB00D68A2F /* LoginViewController.swift in Sources */,
+				244D96A91DA7CE3600D68A2F /* agendar.xcdatamodeld in Sources */,
+				2415DDB41DC7BCBB0012BC48 /* HorarioDisponivel.swift in Sources */,
+				24B429671DC6769E0030D11A /* AgendamentosTableViewController.swift in Sources */,
+				244D96A31DA7CE3600D68A2F /* ViewController.swift in Sources */,
+				244458A91DC14FC20042D538 /* ProfissionalStore.swift in Sources */,
+				2415DDB21DC791870012BC48 /* Hora.swift in Sources */,
+				244458A71DC14FAF0042D538 /* ServicoStore.swift in Sources */,
+				24677AC31DC6D3FB00A21FA6 /* AgendamentoStore.swift in Sources */,
+				24677AC11DC6D3EF00A21FA6 /* Agendamento.swift in Sources */,
+				244D96DE1DB846BB00D68A2F /* Servico.swift in Sources */,
+				24B429651DC675500030D11A /* AgendamentosTableViewCell.swift in Sources */,
+				244D96A11DA7CE3600D68A2F /* AppDelegate.swift in Sources */,
+				244D96DC1DB8457F00D68A2F /* Profissional.swift in Sources */,
+				244D96D81DB7197300D68A2F /* NovoAgendamentoTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244D96B01DA7CE3600D68A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244D96B91DA7CE3600D68A2F /* agendarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		244D96BB1DA7CE3600D68A2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244D96C41DA7CE3600D68A2F /* agendarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		244D96B61DA7CE3600D68A2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 244D969C1DA7CE3500D68A2F /* agendar */;
+			targetProxy = 244D96B51DA7CE3600D68A2F /* PBXContainerItemProxy */;
+		};
+		244D96C11DA7CE3600D68A2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 244D969C1DA7CE3500D68A2F /* agendar */;
+			targetProxy = 244D96C01DA7CE3600D68A2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		244D96A41DA7CE3600D68A2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				244D96A51DA7CE3600D68A2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		244D96AC1DA7CE3600D68A2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				244D96AD1DA7CE3600D68A2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		244D96C61DA7CE3600D68A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		244D96C71DA7CE3600D68A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		244D96C91DA7CE3600D68A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9336158778555F7B85C87B9D /* Pods-agendar.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = agendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edilbertoramos.agendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		244D96CA1DA7CE3600D68A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C30E746E3EE4E09B9AC4CB /* Pods-agendar.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = agendar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edilbertoramos.agendar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		244D96CC1DA7CE3600D68A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19590C56533CDC49DBB1E09 /* Pods-agendarTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = agendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edilbertoramos.agendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/agendar.app/agendar";
+			};
+			name = Debug;
+		};
+		244D96CD1DA7CE3600D68A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049563F134C119697A2464D3 /* Pods-agendarTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = agendarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edilbertoramos.agendarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/agendar.app/agendar";
+			};
+			name = Release;
+		};
+		244D96CF1DA7CE3600D68A2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EAFFD0C3992F8B8BA496BC9 /* Pods-agendarUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = agendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edilbertoramos.agendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = agendar;
+			};
+			name = Debug;
+		};
+		244D96D01DA7CE3600D68A2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ECA61C3D199F6CEF14C0E61 /* Pods-agendarUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = agendarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edilbertoramos.agendarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = agendar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		244D96981DA7CE3500D68A2F /* Build configuration list for PBXProject "agendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244D96C61DA7CE3600D68A2F /* Debug */,
+				244D96C71DA7CE3600D68A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		244D96C81DA7CE3600D68A2F /* Build configuration list for PBXNativeTarget "agendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244D96C91DA7CE3600D68A2F /* Debug */,
+				244D96CA1DA7CE3600D68A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		244D96CB1DA7CE3600D68A2F /* Build configuration list for PBXNativeTarget "agendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244D96CC1DA7CE3600D68A2F /* Debug */,
+				244D96CD1DA7CE3600D68A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		244D96CE1DA7CE3600D68A2F /* Build configuration list for PBXNativeTarget "agendarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				244D96CF1DA7CE3600D68A2F /* Debug */,
+				244D96D01DA7CE3600D68A2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		244D96A71DA7CE3600D68A2F /* agendar.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				244D96A81DA7CE3600D68A2F /* agendar.xcdatamodel */,
+			);
+			currentVersion = 244D96A81DA7CE3600D68A2F /* agendar.xcdatamodel */;
+			path = agendar.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 244D96951DA7CE3500D68A2F /* Project object */;
+}
